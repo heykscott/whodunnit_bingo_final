@@ -46,6 +46,14 @@ function checkForWin() {
     document.body.offsetHeight;
   });
 }
+.bingo-cell {
+  contain: layout style paint;
+  will-change: transform;
+}
+requestAnimationFrame(() => {
+  window.scrollBy(0, 1);
+  window.scrollBy(0, -1);
+});
 .confetti-container[data-v-4ff796ae] {
   width: 0;
   height: 0;
